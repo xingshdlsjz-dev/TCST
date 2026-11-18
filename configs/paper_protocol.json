@@ -1,0 +1,38 @@
+{
+  "pamap2": {
+    "sampling_rate_hz": 50,
+    "window_length": 128,
+    "window_overlap": 0.5,
+    "sequence_length": 6,
+    "sequence_stride": 1,
+    "channels": 27,
+    "num_classes": 10,
+    "batch_size": 64,
+    "max_epochs": 60,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 3,
+    "label_smoothing": 0.02,
+    "transition_weight": 0.2,
+    "seed": 42,
+    "main_test_unit": "sixth_window",
+    "ablation_test_unit": "all_six_window_positions"
+  },
+  "opportunity": {
+    "channels": 113,
+    "num_classes": 5,
+    "window_length": 128,
+    "window_stride": 64,
+    "sequence_length": 6,
+    "train_subjects": ["S4", "S2"],
+    "validation_subjects": ["S3"],
+    "test_subjects": ["S1"],
+    "batch_size": 32,
+    "max_epochs": 30,
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_patience": 5,
+    "seed": 42
+  }
+}

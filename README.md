@@ -1,6 +1,6 @@
 # TCST-HAR Paper Reproducibility Package
 
-This folder contains the code corresponding to the latest manuscript `main_revised_ablation (2).tex`.
+This folder contains the code.
 It covers the four reported experiment groups:
 
 - PAMAP2 matched six-window comparison, including CNN1D, LSTM, DeepConvLSTM, ResNet1D, TCN, InceptionTime, GRU-FCN, TimesNet, PatchTST, iTransformer, HARMamba-style, ModernTCN, and TCST-HAR.
